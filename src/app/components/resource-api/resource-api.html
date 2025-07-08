@@ -1,0 +1,15 @@
+<h2 class="title">Product List</h2>
+
+<div class="outer">
+    @for (product of ProductResource; track $index) {
+        <div class="product">
+            <div class="imgDiv">
+                <img class="img" src="{{product.image}}" alt="">
+            </div>
+            <div class="details">
+                <h2>Title: {{product.title}}</h2>
+                <h2>Title: {{product.price}}</h2>
+            </div>
+        </div>
+    }
+</div>

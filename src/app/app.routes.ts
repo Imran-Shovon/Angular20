@@ -4,11 +4,18 @@ import { ControlFlow } from './components/control-flow/control-flow';
 import { ResourceAPIComponent } from './components/resource-api/resource-api';
 import { DataBinding } from './components/data-binding/data-binding';
 import { SingnalExample } from './components/singnal-example/singnal-example';
+import { AttDirective } from './components/att-directive/att-directive';
+import { GetAPI } from './components/get-api/get-api';
+import { User } from './components/user/user';
 
 export const routes: Routes = [
     {
         path: 'admin',
         component: Admin
+    },
+    {
+        path: 'user',
+        component: User
     },
     {
         path: 'control-flow',
@@ -25,6 +32,14 @@ export const routes: Routes = [
     {
         path: 'signal',
         component: SingnalExample
+    },
+    {
+        path: 'attribute-directive',
+        component: AttDirective
+    },
+    {
+        path: 'get-api',
+        component: GetAPI
     }
 
 ];

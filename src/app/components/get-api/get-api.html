@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-6">
+        <h2 class="mx-4">Posts:</h2>
+        @for(post of posts; track $index) {
+            <div class="card mx-4 mb-3">
+                <div class="card-body mx-1">
+                <h5 class="card-title">{{ post.name }}</h5>
+                <p class="card-text">{{ post.username }}</p>
+                <p class="card-text">{{ post.email }}</p>
+                <p class="card-text">{{ post.website }}</p>
+                </div>
+            </div>
+            }
+    </div>
+    <div class="col-6">
+        <h2 class="mx-4">Bus users:</h2>
+        @for(user of busUsers; track $index) {
+        <div class="card mx-4 mb-3">
+            <div class="card-body mx-1">
+            <h5 class="card-title">{{ user.userName }}</h5>
+            <p class="card-text">{{ user.emailId }}</p>
+            <p class="card-text">{{ user.fullName }}</p>
+            <p class="card-text">{{ user.role }}</p>
+            <p class="card-text">{{ user.projectName }}</p>
+            </div>
+        </div>
+        }
+    </div>
+</div>

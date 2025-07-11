@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-6">
+        <ng-container #container></ng-container>
+        <h2 class="header">Dynamic Component Example</h2>
+        <p>This example demonstrates how to create and load a dynamic component in Angular.</p>
+        <button (click)="loadComponent()">Load Dynamic Component</button>
+        <!-- <ng-container *ngComponentOutlet="dynamicComponent"></ng-container> -->
+    </div>
+    <div class="col-6">
+        <button (click)="destroyComponent()">Destroy Component</button>
+    </div>
+</div>

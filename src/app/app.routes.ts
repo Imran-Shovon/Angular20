@@ -7,6 +7,7 @@ import { SingnalExample } from './components/singnal-example/singnal-example';
 import { AttDirective } from './components/att-directive/att-directive';
 import { GetAPI } from './components/get-api/get-api';
 import { User } from './components/user/user';
+import { DynamicComponent } from './components/dynamic-component/dynamic-component';
 
 export const routes: Routes = [
     {
@@ -40,6 +41,10 @@ export const routes: Routes = [
     {
         path: 'get-api',
         component: GetAPI
+    },
+    {
+        path: 'dynamic-component',
+        component: DynamicComponent
     }
 
 ];
